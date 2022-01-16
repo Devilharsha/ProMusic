@@ -48,7 +48,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["fstart", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def start_private(client: Client, message: Message):
     await message.reply_text(
@@ -75,10 +75,10 @@ async def start_private(client: Client, message: Message):
                         "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ],
-                [InlineKeyboardButton("🌐 WebSite", url=f"http://decodebugs.netlify.app/")],
+                [InlineKeyboardButton("🌐 bot support", url=f"https://t.me/botinfernipehelp")],
                 [
                     InlineKeyboardButton(
-                        "💕 Source", url="https://github.com/BrayDanXD/ProMusic"
+                        "💕 Dev", url="https://t.me/Aryanjawale"
                     )
                 ],
             ]
